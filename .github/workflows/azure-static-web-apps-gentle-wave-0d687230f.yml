@@ -43,7 +43,7 @@ jobs:
           action: "upload"
           app_location: "/"       # raíz del repo (donde está index.html)
           api_location: ""        # no tienes backend
-          output_location: "/"    # no hay carpeta de build, usa la raíz
+          output_location: ""    # no hay carpeta de build, usa la raíz
           app_build_command: ""   # desactiva el build
           github_id_token: ${{ steps.idtoken.outputs.result }}
   close_pull_request_job:
